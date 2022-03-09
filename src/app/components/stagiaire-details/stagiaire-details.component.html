@@ -1,0 +1,22 @@
+<h2>Détails Stagiaire</h2>
+
+<hr />
+<div *ngIf="stagiaire">
+  <div>
+    <label><b>Prénom: </b></label> {{stagiaire.prenom}}
+  </div>
+  <div>
+    <label><b>Nom: </b></label> {{stagiaire.nom}}
+  </div>
+  <div>
+    <label><b>Email: </b></label> {{stagiaire.email}}
+  </div>
+  <div>
+    <label><b>Téléphone: </b></label> {{stagiaire.tel}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Retour à la liste des stagiaires</button><br>
+
